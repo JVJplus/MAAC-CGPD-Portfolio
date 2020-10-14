@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description"
+        content="Portfolio of Graphics and print cerification course provided by MAAC Jamshedpur.">
+    <meta name="keywords"
+        content="MAAC, CGPD, Portfolio, Jamshedpur, Graphics, Photoshop, Illustrator, Design, Review">
+
+
+        <title>Portfolio</title>
+        <link href="favicon.png" rel="icon" type="image/x-icon" />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+            .img-container {
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top-no">
+            <a class="navbar-brand text-light" href="./index.html">Portfolio</a>
+            <button
+                class="navbar-toggler"
+                data-target="#my-nav"
+                data-toggle="collapse"
+                aria-controls="my-nav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="my-nav" class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html"
+                            >Home <span class="sr-only">(current)</span></a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="http://www.maacanimationkasba.com/maac-courses/cdpd/"
+                            tabindex="-1"
+                            aria-disabled="true"
+                            >Course</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="https://jvjplus.github.io/"
+                            tabindex="-1"
+                            aria-disabled="true"
+                            >About</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="https://jvjplus.github.io/resume/"
+                            tabindex="-1"
+                            aria-disabled="true"
+                            >Contact</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="jumbotron m-0 text-center">
+            <h1 class="display-3 text-danger">My Portfolio</h1>
+            <p class="lead text-success">
+                Some of the Projets of <b>CGPD</b> course.
+            </p>
+
+            <div class="container">
+                <button class="btn btn-sm btn-primary" type="button">
+                    Photoshop
+                </button>
+                <button class="btn btn-sm btn-info" type="button">
+                    Illustrator
+                </button>
+                <!-- <div class="d-sm-none mt-n3"><br></div> -->
+                <button class="btn btn-sm btn-success" type="button">
+                    Adobe XD
+                </button>
+                <button
+                    class="btn btn-sm btn-danger d-none d-sm-inline"
+                    type="button"
+                >
+                    Corel Draw
+                </button>
+            </div>
+        </div>
+
+        <!--  Main Section -->
+        <div class="container mt-4 clearfix">
+            <h4 class="d-block d-sm-inline text-dark">
+                Show Projects :
+            </h4>
+            <div class="btn-group mt-sm-n2 float-sm-right clearfix">
+                <button
+                    type="button"
+                    class="btn btn-warning active filter-btn"
+                    onclick="fiterImages(this,'all')"
+                >
+                    ALL
+                </button>
+                <button
+                    type="button"
+                    class="btn btn-warning filter-btn"
+                    onclick="fiterImages(this,'psd')"
+                >
+                    Photoshop
+                </button>
+                <button
+                    type="button"
+                    class="btn btn-warning filter-btn"
+                    onclick="fiterImages(this,'ai')"
+                >
+                    Illustrator
+                </button>
+            </div>
+
+            <hr />
+        </div>
+
+        <div class="container">
+            <div class="card-columns">
+                <div class="card psd">
+                    <div class="card-body">
+                        <div class="img-container">
+                            <img
+                                src="works/covid poster with mockup.jpg"
+                                alt="Covid-19 Poster"
+                                class="img-fluid rounded-lg"
+                                onclick="openModal(this)"
+                            />
+                        </div>
+                        <h5 class="lead card-title mt-3 mb-0">
+                            Covid-19 Poster
+                        </h5>
+                    </div>
+                    <!-- card -->
+                </div>
+
+                <div class="card psd">
+                    <div class="card-body">
+                        <div class="img-container">
+                            <img
+                                src="works/calender mockup.jpg"
+                                alt="Wall Calender"
+                                class="img-fluid rounded-lg"
+                                onclick="openModal(this)"
+                            />
+                        </div>
+                        <h5 class="lead card-title mt-3 mb-0">Wall Calender</h5>
+                    </div>
+                    <!-- card -->
+                </div>
+
+                <div class="card psd">
+                    <div class="card-body">
+                        <div class="img-container">
+                            <img
+                                src="works/calender mockup2.jpg"
+                                alt="Office Calender"
+                                class="img-fluid rounded-lg"
+                                onclick="openModal(this)"
+                            />
+                        </div>
+                        <h5 class="lead card-title mt-3 mb-0">
+                            Office Calender
+                        </h5>
+                    </div>
+                    <!-- card -->
+                </div>
+
+                <div class="card psd">
+                    <div class="card-body">
+                        <div class="img-container">
+                            <img
+                                src="works/notebook.jpg"
+                                alt="Brand Notebook"
+                                class="img-fluid rounded-lg"
+                                onclick="openModal(this)"
+                            />
+                        </div>
+                        <h5 class="lead card-title mt-3 mb-0">
+                            Brand Notebook
+                        </h5>
+                    </div>
+                    <!-- card -->
+                </div>
+
+                <div class="card psd">
+                    <div class="card-body">
+                        <div class="img-container">
+                            <img
+                                src="works/matte painting.jpg"
+                                alt="Matte Painting"
+                                class="img-fluid rounded-lg"
+                                onclick="openModal(this)"
+                            />
+                        </div>
+                        <h5 class="lead card-title mt-3 mb-0">
+                            Matte Painting
+                        </h5>
+                    </div>
+                    <!-- card -->
+                </div>
+
+                <div class="card psd">
+                    <div class="card-body">
+                        <div class="img-container">
+                            <img
+                                src="works/clone effect.jpg"
+                                alt="Clone Effect"
+                                class="img-fluid rounded-lg"
+                                onclick="openModal(this)"
+                            />
+                        </div>
+                        <h5 class="lead card-title mt-3 mb-0">Clone Effect</h5>
+                    </div>
+                    <!-- card -->
+                </div>
+
+                <div class="card psd ai">
+                    <div class="card-body">
+                        <div class="img-container">
+                            <img
+                                src="works/magazine with mockup.jpg"
+                                alt="Magazine Mockup"
+                                class="img-fluid rounded-lg"
+                                onclick="openModal(this)"
+                            />
+                        </div>
+                        <h5 class="lead card-title mt-3 mb-0">
+                            Magazine Mockup
+                        </h5>
+                    </div>
+                    <!-- card -->
+                </div>
+
+                <div class="card psd">
+                    <div class="card-body">
+                        <div class="img-container">
+                            <img
+                                src="works/magazine black type.jpg"
+                                alt="Magazine Design"
+                                class="img-fluid rounded-lg"
+                                onclick="openModal(this)"
+                            />
+                        </div>
+                        <h5 class="lead card-title mt-3 mb-0">
+                            Magazine Design
+                        </h5>
+                    </div>
+                    <!-- card -->
+                </div>
+
+                <div class="card psd">
+                    <div class="card-body">
+                        <div class="img-container">
+                            <img
+                                src="works/visiting card mockup.png"
+                                alt="Visiting Card Mockup"
+                                class="img-fluid rounded-lg"
+                                onclick="openModal(this)"
+                            />
+                        </div>
+                        <h5 class="lead card-title mt-3 mb-0">
+                            Visiting Card Mockup
+                        </h5>
+                    </div>
+                    <!-- card -->
+                </div>
+
+                <div class="card ai">
+                    <div class="card-body">
+                        <div class="img-container">
+                            <img
+                                src="works/night scene vector art illustration.png"
+                                alt="City Vector Art"
+                                class="img-fluid rounded-lg"
+                                onclick="openModal(this)"
+                            />
+                        </div>
+                        <h5 class="lead card-title mt-3 mb-0">
+                            City Vector Art
+                        </h5>
+                    </div>
+                    <!-- card -->
+                </div>
+
+                <div class="card psd">
+                    <div class="card-body">
+                        <div class="img-container">
+                            <img
+                                src="works/sport poster.jpg"
+                                alt="Sports Poster"
+                                class="img-fluid rounded-lg"
+                                onclick="openModal(this)"
+                            />
+                        </div>
+                        <h5 class="lead card-title mt-3 mb-0">Sports Poster</h5>
+                    </div>
+                    <!-- card -->
+                </div>
+
+                <div class="card ai">
+                    <div class="card-body">
+                        <div class="img-container">
+                            <img
+                                src="works/flat vector landscape.jpg"
+                                alt="Flat Landscape Vector Art"
+                                class="img-fluid rounded-lg"
+                                onclick="openModal(this)"
+                            />
+                        </div>
+                        <h5 class="lead card-title mt-3 mb-0">
+                            Flat Landscape Vector Art
+                        </h5>
+                    </div>
+                    <!-- card -->
+                </div>
+
+                <div class="card psd ai">
+                    <div class="card-body">
+                        <div class="img-container">
+                            <img
+                                src="works/republic day poster.jpg"
+                                alt="Republic Day Poster"
+                                class="img-fluid rounded-lg"
+                                onclick="openModal(this)"
+                            />
+                        </div>
+                        <h5 class="lead card-title mt-3 mb-0">
+                            Republic Day Poster
+                        </h5>
+                    </div>
+                    <!-- card -->
+                </div>
+
+                <!-- card columns -->
+            </div>
+            <!-- container -->
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 id="modal-heading">Covid 19 Poster</h4>
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                        >
+                            &times;
+                        </button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body mx-auto">
+                        <img
+                            id="modal-img"
+                            src="works/covid poster with mockup.jpg"
+                            class="img-fluid"
+                        />
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer mx-auto"></div>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <footer class="jumbotron m-0 p-3">
+            <div class="container text-center">
+                <a href="https://wa.me/919835582472?text=Hi Jay!!" target="_blank" class="btn text-success">
+                    <i class="fa fa-whatsapp"></i>
+                </a>
+                <a href="https://www.facebook.com/JVJplus" target="_blank" class="btn text-primary">
+                    <i class="fa fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/JVJplus" target="_blank" class="btn text-danger">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://github.com/JVJplus" target="_blank" class="btn text-dark">
+                    <i class="fa fa-github"></i>
+                </a>
+            </div>
+        </footer>
+
+        <script src="../../js/jquery-3.5.1.min.js"></script>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <script>
+            function openModal(obj) {
+                $("#modal-img").attr("src", obj.src);
+                $("#modal-heading").text(obj.alt);
+                $("#myModal").modal("toggle");
+            }
+
+            function fiterImages_with_jquery(obj, whatToShow) {
+                $(".filter-btn").removeClass("active");
+                $(obj).addClass("active");
+
+                // if pahle se display off h toh
+                $("div.card").show();
+                if (whatToShow == "psd") {
+                    $("div.card.ai").hide();
+                }
+                if (whatToShow == "ai") {
+                    $("div.card.psd").hide();
+                    $("div.card.psd.ai").show();
+                }
+            }
+
+            function fiterImages(obj, whatToShow) {
+                $(".filter-btn").removeClass("active");
+                $(obj).addClass("active");
+
+                var allCards = document.getElementsByClassName("card");
+
+                for (i = 0; i < allCards.length; i++) {
+                    var ele = allCards[i];
+                    ele.style.display = "";
+                }
+
+                for (i = 0; i < allCards.length; i++) {
+                    var ele = allCards[i];
+                    if (
+                        ele.classList.value.indexOf(whatToShow) < 0 &&
+                        whatToShow != "all"
+                    ) {
+                        ele.style.display = "none";
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
